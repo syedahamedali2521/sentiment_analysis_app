@@ -6,8 +6,7 @@ from pathlib import Path
 # Add src to path
 project_root = Path(__file__).resolve().parents[1]
 sys.path.append(str(project_root / 'src'))
-
-from analyze_sentiment import predict_text, predict_batch
+from src.analyze_sentiment import predict_text, predict_batch
 
 st.set_page_config(page_title='Neon Sentiment', layout='wide', page_icon='🧠')
 
