@@ -1,0 +1,116 @@
+/* 🌌 Futuristic Neon UI (Pure Black Background + Readable Text) */
+
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #000000 !important;  /* true black background */
+    color: #00ffff !important;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Headings and labels */
+h1, h2, h3, h4, h5, h6, label, p, span, div, .stMarkdown, .stTextInput label {
+    color: #00ffff !important;
+    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.4);
+}
+
+/* 🧠 Textareas and Inputs */
+textarea, input[type="text"], .stTextInput>div>div>input {
+    background-color: #0d0d0d !important;
+    border: 2px solid #00ffff !important;
+    border-radius: 10px;
+    color: #00ffff !important;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+textarea:hover, input[type="text"]:hover, .stTextInput>div>div>input:hover {
+    box-shadow: 0px 0px 15px #00ffff;
+    transform: scale(1.02);
+}
+
+/* 🎛 Buttons */
+.stButton>button {
+    background-color: #00ffff !important;
+    color: #000 !important;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+.stButton>button:hover {
+    box-shadow: 0px 0px 20px #00ffff;
+    transform: scale(1.05);
+}
+
+/* 📊 Chart or Result Container */
+div[data-testid="stHorizontalBlock"], div[data-testid="stVerticalBlock"] {
+    background-color: #000000 !important;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+div[data-testid="stHorizontalBlock"]:hover {
+    box-shadow: 0px 0px 25px #00ffff;
+    transform: scale(1.01);
+}
+
+/* ✨ Button Pulse Animation */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px #00ffff; }
+    50% { box-shadow: 0 0 20px #00ffff; }
+    100% { box-shadow: 0 0 5px #00ffff; }
+}
+.stButton>button {
+    animation: pulseGlow 2s infinite;
+}
+
+/* 🌀 Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 8px;
+}
+/* 🎭 Sentiment Result Glows */
+.sentiment-positive {
+    border: 2px solid #00ff6a;
+    background-color: rgba(0, 255, 106, 0.05);
+    box-shadow: 0 0 20px #00ff6a;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.sentiment-positive:hover {
+    box-shadow: 0 0 40px #00ff6a;
+    transform: scale(1.02);
+}
+
+.sentiment-neutral {
+    border: 2px solid #00bfff;
+    background-color: rgba(0, 191, 255, 0.05);
+    box-shadow: 0 0 20px #00bfff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.sentiment-neutral:hover {
+    box-shadow: 0 0 40px #00bfff;
+    transform: scale(1.02);
+}
+
+.sentiment-negative {
+    border: 2px solid #ff003c;
+    background-color: rgba(255, 0, 60, 0.05);
+    box-shadow: 0 0 20px #ff003c;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.sentiment-negative:hover {
+    box-shadow: 0 0 40px #ff003c;
+    transform: scale(1.02);
+}
